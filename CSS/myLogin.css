@@ -26,10 +26,11 @@ html {
     }
 }
 
+.background img {
+    width: 100%;
+    height: auto;
+}
 body {
-    background-image: url(../Images/myLogin/Background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: 0%;
     padding: 0%;
 }
