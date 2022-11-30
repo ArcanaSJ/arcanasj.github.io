@@ -26,7 +26,7 @@ html {
     }
 }
 
-.background img {
+.bckgrnd img {
     width: 100%;
     height: auto;
 }
@@ -113,4 +113,10 @@ body {
 }
 .mother a:hover {
  color: skyblue;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 600px) {
+    
 }
