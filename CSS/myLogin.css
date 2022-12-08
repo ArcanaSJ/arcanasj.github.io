@@ -26,23 +26,13 @@ html {
     }
 }
 
-
 body {
-    background-position: center center;
-    background-attachment: fixed;
+    background-image: url(../Images/myLogin/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
-
-@media (min-width: 280px) {
-    body {
-        background-image: url(../Images/myLogin/Background.jpg);
-    }
-}
-
 .container h1 {
     font-family: Montserrat;
     text-align: center;
@@ -68,54 +58,6 @@ body {
     left: 55px;
     top: 45px;
 }
-
-/* IPHONE SE */
-@media (min-width: 280px) {
-    .logo {
-        width: 120px;
-    }
-
-    .mother {
-        margin-top: 50px;
-    }
-}
-
-/* IPHONE XR */
-@media (min-width: 400px) {
-    .logo {
-        width: 210px;
-    }
-
-    .mother {
-        margin-top: -40px;
-    }
-}
-
-/* IPHONE 12 PRO */
-@media (min-width: 390px) {
-    .logo {
-        width: 200px;
-    }
-}
-
-/* SAMSUNG GALAXY S8+ */
-@media (min-width: 360px) {
-    .logo {
-        width: 180px;
-    }
-}
-
-/* SAMSUNG GALAXY S20 ULTRA */
-@media (min-width: 410px) {
-    .logo {
-        width: 200px;
-    }
-
-    .mother {
-        margin-top: 10px;
-    }
-}
-
 .userlogo {
     width: 100px;
     height: 100px;
@@ -170,10 +112,4 @@ body {
 }
 .mother a:hover {
  color: skyblue;
-}
-
-/* MEDIA QUERY */
-
-@media (min-width: 600px) {
-    
 }

@@ -1,0 +1,638 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Canela;
+    src: url(../Fonts/CanelaDeck-Regular-Trial.otf);
+}
+
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat; 
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.outline {
+    border-width: 0;
+    height: 20px;
+    background-color: #023E8A;
+}
+
+.navigation {
+    margin-top: -8px;
+    height: 130px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.logo{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100px;
+    height: auto;
+}
+
+.navigation p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    color: black;
+    font-size: large;
+    font-weight: 300;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+}
+
+.nav1 {
+    position: absolute;
+    margin: 35px auto 0;
+    left: 510px;
+    width: 530px;
+    height: 50px;
+    background: #023E8A;
+    border-radius: 50px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+/* ANIMATION */
+
+body {
+    animation: transitionIn 0.75s;
+}
+
+.quote {
+    animation: transitionIn2 2.75s;
+    transition-delay: 200ms;
+}
+
+/* .nav2 a {
+    animation: transitionIn1 2.75s;
+}
+
+.nav2 a {
+    animation: transitionIn2 3.75s;
+    transition-delay: 200ms;
+} */
+
+.info h2 {
+    animation: transitionIn4 5.75s;
+}
+
+.info p {
+    animation: transitionIn3 6.75s;
+    transition-delay: 400ms;
+}
+
+
+@keyframes transitionIn4 {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionIn3 {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionIn2 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        transition-delay: 200ms;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.nav1 a {
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s linear;
+}
+
+.nav1 a:hover {
+    color:#023E8A;
+}
+
+.nav1 .animation{
+	position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: -20px;
+	height: 80%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #ffffff;
+	border-radius: 55px;
+	transition: all .5s ease 0s;
+}
+.nav1 a:nth-child(1){
+	width: 90px;
+    transition: all .5s linear;
+}
+.nav1 a:nth-child(1):hover~.animation{
+	width: 80px;
+	left: 0;
+}
+.nav1 a:nth-child(2){
+	width: 80px;
+}
+.nav1 a:nth-child(2):hover~.animation{
+	width: 90px;
+	left: 80px;
+}
+.nav1 a:nth-child(3){
+	width: 130px;
+}
+.nav1 a:nth-child(3):hover~.animation{
+	width: 135px;
+	left: 160px;
+}
+.nav1 a:nth-child(4){
+	width: 120px;
+}
+.nav1 .start-home, a:nth-child(4):hover~.animation{
+	width: 120px;
+	left: 295px;
+}
+.nav1 a:nth-child(5){
+	width: 100px;
+}
+.nav1 a:nth-child(5):hover~.animation{
+	width: 110px;
+	left: 410px;
+}
+
+/* USERLOG */
+
+.userlog {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    position: absolute;
+    border-radius: 50px;
+    top: 25px;
+    right: 0;
+    margin-top: 17px;
+    margin-right: 50px;
+    width: 60px;
+    height: auto;
+}
+
+.logout {
+    filter: invert(9%) sepia(30%) saturate(5280%) hue-rotate(308deg) brightness(62%) contrast(106%);
+    position: absolute;
+    top: 25px;
+    right: 0;
+    margin-top: 35px;
+    margin-right: 120px;
+    width: 30px;
+    height: auto;
+}
+
+/* CONTENT HERE */
+:root {
+    --Font1:  Arial, Helvetica, sans-serif;
+
+    --D_Blue: #023E8A;
+    --White: #FFFFFF;
+}
+
+/* 
+=============================================
+index.html
+=============================================
+*/
+
+h1,
+h2,
+p,
+ol,
+label {
+    -webkit-user-drag: none;
+        user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*
+Enrollment Button
+*/
+
+.enrollment {
+    text-transform: uppercase;
+
+    font-size: 25px;
+
+    margin-top: 40px;
+
+    color: var(--D_Blue);
+
+    text-align: center;
+}
+
+form > button {
+    text-transform: uppercase;
+
+    font-size: 25px;
+
+    background-color: var(--White);
+    color: var(--D_Blue);
+
+    padding: 15px 30px;
+
+    border-style: solid;
+    border-radius: 100px;
+    border-color: var(--D_Blue);
+    border-width: 3px;
+
+    position: relative;
+    bottom: 0px;
+
+    transition: 0.3s;
+}
+
+form > button:hover {
+    background-color: var(--D_Blue);
+    
+    color: var(--White);
+
+    position: relative;
+    bottom: 3px;
+
+    box-shadow: 0px 2px 5px var(--D_Blue);
+}
+
+/*
+Windows
+*/
+
+.pg-1 {
+    font-size: 20px;
+
+    background-color: var(--D_Blue);
+    color: var(--White);
+
+    padding: 10px 30px;
+    
+    width: 250px;
+    
+    margin-top: 10px;
+
+    border-radius: 100px;
+}
+
+
+ol {
+    color: var(--D_Blue);
+
+    padding: 35px 70px 70px;
+
+    margin-top: -20px;
+
+    width: 400px;
+
+    border-style: dashed;
+    border-color: var(--D_Blue);
+    border-radius: 30px;
+}
+
+/*
+Enrollment Section
+*/
+
+.req {
+    margin: 40px 200px;
+
+    border-style: solid;
+    border-color: var(--D_Blue);
+    border-radius: 50px;
+    
+    padding: 20px 40px;
+}
+
+.req > h2 {
+    text-transform: uppercase;
+    
+    font-size: 30px;
+
+    color: var(--White);
+
+    background-color: var(--D_Blue);
+
+    border-radius: 30px 30px 0px 0px;
+
+    padding: 35px 80px;
+
+    text-align: center;
+    margin-top: -23px;
+    margin-left: -43px;
+    
+    width: 949px;
+    height: auto;
+}
+
+.online {
+    float: left;
+
+    margin-top: -598px;
+
+    position: relative;
+    left: 455px;
+}
+
+.online > ol {
+    height: 458px;
+}
+
+/*
+Payment
+*/
+
+.pay {
+    background-color: var(--D_Blue);
+    background: linear-gradient(180deg, rgba(47, 105, 179, 0) 0%, #023E8A 100%);
+
+    color: var(--D_Blue);
+
+    padding: 100px 50px;
+    padding-bottom: 100px;
+
+}
+
+.pay > h1 {
+    text-transform: uppercase;
+
+    font-size: 50px;
+
+    padding-left: 80px;
+}
+
+.pay > button {
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: var(--White);
+
+    padding: 50px 100px;
+
+    margin: 0px 2px;
+
+    border-style: solid;
+    border-radius: 30px;
+    border-color: var(--White);
+    border-width: 50px;
+
+    transition: 0.3s;
+}
+
+.pay > button:hover {
+    position: relative;
+    bottom: 3px;
+
+    box-shadow: 0px 2px 5px var(--D_Blue);
+}
+
+.pay > #opt1 {
+    background-image: url(../Images/myAdmission/paypal-logo.png);
+}
+
+.pay > #opt2 {
+    background-image: url(../Images/myAdmission/visa-logo.png);
+}
+
+.pay > #opt3 {
+    background-image: url(../Images/myAdmission/MasterCard_Logo.png);
+}
+
+.pay > #opt4 {
+    background-image: url(../Images/myAdmission/cebuana-logo.png);
+}
+
+/* 
+=============================================
+enroll.html
+=============================================
+*/
+
+#enrollment {
+    background-color: #FFFFFF;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label {
+    font-size: 15px;
+}
+
+.enroll > .bio > input {
+    font-family: var(--Font1);
+
+    border: 1px solid var(--D_Blue);
+
+    width: 370px;
+
+    padding: 10px;
+
+    display: block;
+
+    align-items: center;
+}
+
+.enroll {
+    background-color:var(--White);
+
+    border-style: solid;
+    border-color: var(--D_Blue);
+    border-radius: 30px;
+
+    padding: 20px;
+
+    margin: 50px 450px;
+
+    box-shadow: 0px 0px 5px black;
+}
+
+.enroll > .bio > h1 {
+    background-color:  var(--D_Blue);
+    color: var(--White);
+
+    margin: -23px -23px 20px -23px;
+
+    border-radius: 30px 30px 0px 0px;
+
+    padding: 20px 40px;
+
+}
+
+.register,
+.login {
+    border-radius: 0px;
+
+    background-color: var(--D_Blue);
+
+    color: var(--White);
+
+}
+
+.register {
+    padding: 5px 128px;
+}
+
+.login {
+    padding: 5px 150px;
+}
+
+.register:hover,
+.login:hover {
+    position: relative;
+    bottom: 0px;
+
+    box-shadow: 0px 0px 5px var(--D_Blue);
+}
+
+/* 
+=============================================
+payment.html
+=============================================
+*/
+
+
+/* CONTENT ENDS HERE */
+
+
+
+/* CONTACTS / BOTTOMLINE */
+
+.outline2 {
+    border-width: 0;
+    height: 20px;
+    background-color: #023E8A;
+}
+
+.contacts {
+    margin-top: -8px;
+    height: 190px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.contact {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.contact2 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    margin-left: 40px;
+    margin-top: -70px;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    color: black;
+}
+
+.contact3 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    margin-right: 40px;
+    margin-top: -60px;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    color: black;
+}
+
+.logo2 {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    display: block;
+    margin-top: 15px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+}
