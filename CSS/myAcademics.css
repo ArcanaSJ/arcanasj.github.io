@@ -284,7 +284,6 @@ body {
    margin-right: 100px; 
    align-items: center;
    background-position: center;
-   margin-bottom: 20px;
    background-size: cover;
 }
 
@@ -295,12 +294,15 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-family: Montserrat;
     position: absolute;
     top: 405px;
     margin-left: 50px;
     font-size: xx-large; 
     z-index: 5;
-    color: white;
+    color:white;
 }
 .cont button{
     margin-left: 90%;
@@ -329,7 +331,6 @@ body {
    margin-right: 100px; 
    align-items: center;
    background-position: center;
-   margin-bottom: 20px;
    background-size: cover;
 }
 .cont1 h3{
@@ -339,12 +340,15 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-family: Montserrat;
     position: absolute;
     top: 405px;
     margin-left: 50px;
     font-size: xx-large; 
     z-index: 5;
-    color: white;
+    color:white;
 }
 .cont1 button{
     margin-left: 90%;
@@ -373,7 +377,6 @@ body {
    margin-right: 100px; 
    align-items: center;
    background-position: center;
-   margin-bottom: 20px;
    background-size: cover;
 }
 .cont2 h3{
@@ -383,6 +386,9 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-family: Montserrat;
     position: absolute;
     top: 405px;
     margin-left: 50px;
@@ -403,7 +409,6 @@ body {
 .color2{
     width: 100%;
     height: 30%;
-    background: linear-gradient(180deg, rgba(47, 105, 179, 0) 0%, #023E8A 100%);
     opacity: .6;
     position: absolute;
     margin-top: 350px;
@@ -415,6 +420,7 @@ body {
    display: flex; 
    position: relative; 
    background-repeat: no-repeat;
+   margin-bottom: -20px;
    margin-right: 100px; 
    align-items: center;
    background-position: center;
@@ -427,6 +433,9 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-family: Montserrat;
     position: absolute;
     top: 405px;
     margin-left: 50px;
@@ -453,6 +462,12 @@ body {
 .outline2 {
     border-width: 0;
     height: 20px;
+    background-color: #023E8A;
+}
+
+.outline3 {
+    border-width: 0;
+    height: 5px;
     background-color: #023E8A;
 }
 
