@@ -61,7 +61,7 @@ html {
 }
 
 .nav1 {
-    position: absolute;
+    position: absolute; 
     margin: 35px auto 0;
     left: 510px;
     width: 530px;
@@ -71,6 +71,7 @@ html {
     font-size: 0;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
+
 
 /* ANIMATION */
 
@@ -293,46 +294,6 @@ body {
 
     width: 100%;
 }
-
-/* .nav2 {
-    text-align: center;
-    word-spacing: 140px;
-    margin-top: -5px;
-    border-width: 0;     
-    height: 120px;
-    background-color: #023E8A;
-}
-
-.nav2 a {
-    left: -10px;
-    top: 50px;
-    font-size: 25px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    line-height: 50px;
-    position: relative;
-}
-
-.nav2 a::after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -8px;
-    transition: 0.3s;
-}
-
-.nav2 a:hover {
-    color: white;
-}
-.nav2 a:hover::after {
-    width: 100%;
-} */
-
 
 .info {
     margin-top: -10px;

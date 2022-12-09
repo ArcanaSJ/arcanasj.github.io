@@ -35,19 +35,19 @@
             <h1>Online Enrollment</h1>
 
             <label>Username: </label>
-            <input type="text" placeholder="name-123">
+            <input type="text" placeholder="name-123" id="username">
             <br>
             <label>Password: </label>
-            <input type="password" placeholder="********">
+            <input type="password" placeholder="********" id="password">
             <br>
             <label>Email: </label>
-            <input type="text" placeholder="sample@gmail.com">
+            <input type="text" placeholder="sample@gmail.com" id="email">
             <br>
 
             <button type="button" class="register">Register</button>
             <br>
             <br>
-            <button type="button" class="login">Login</button>
+            <button type="button" class="login" onclick="auth()">Login</button>
     </form>
 </div>
 
@@ -69,12 +69,6 @@
             </div>
         </div>
     </div>
-<script>
-    function pay(id)
-    {
-        localStorage.option = id;
-        window.location.href = 'myPayment.html';
-    }
-</script>
+<script src="JavaScript/jsLogin2.js"></script>
 </body>
 </html>

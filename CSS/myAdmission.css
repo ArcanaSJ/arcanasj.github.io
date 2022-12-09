@@ -495,11 +495,8 @@ label {
 
 .bio {
     width: 310px;
-    height: 480px;
-    background:#203354;
+    height: 500px;
     color: white;
-    padding: 70px;
-    border-radius: 5px;
 
     background-color:var(--White);
 

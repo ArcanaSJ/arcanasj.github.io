@@ -1,12 +1,3 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(../Fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-    font-family: Canela;
-    src: url(../Fonts/CanelaDeck-Regular-Trial.otf);
-}
 
 * { 
     box-sizing: border-box;
@@ -14,17 +5,14 @@
     margin: 0;
     font-family: Montserrat; 
 }
-
 html {
     overflow-x: hidden;
 }
-
 .outline {
     border-width: 0;
     height: 20px;
     background-color: #023E8A;
 }
-
 .navigation {
     margin-top: -8px;
     height: 130px;
@@ -37,7 +25,6 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-
     position: absolute;
     top: 25px;
     left: 25px;
@@ -51,7 +38,6 @@ html {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-
     color: black;
     font-size: large;
     font-weight: 300;
@@ -72,26 +58,22 @@ html {
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
 
-/* ANIMATION */
 
+/* ANIMATION */
 body {
     animation: transitionIn 0.75s;
 }
-
 .quote {
     animation: transitionIn2 2.75s;
     transition-delay: 200ms;
 }
-
 /* .nav2 a {
     animation: transitionIn1 2.75s;
 }
-
 .nav2 a {
     animation: transitionIn2 3.75s;
     transition-delay: 200ms;
 } */
-
 .info h2 {
     animation: transitionIn4 5.75s;
 }
@@ -101,13 +83,11 @@ body {
     transition-delay: 400ms;
 }
 
-
 @keyframes transitionIn4 {
     from {
         opacity: 0;
         transform: translateX(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -119,7 +99,6 @@ body {
         opacity: 0;
         transform: translateX(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -132,7 +111,6 @@ body {
         transform: translateY(20px);
         transition-delay: 200ms;
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -144,13 +122,11 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 
 .nav1 a {
     font-size: 15px;
@@ -168,7 +144,6 @@ body {
 .nav1 a:hover {
     color:#023E8A;
 }
-
 .nav1 .animation{
 	position: absolute;
     margin-top: 5px;
@@ -220,15 +195,12 @@ body {
 	left: 410px;
 }
 
-/* USERLOG */
-
 .userlog {
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-
     position: absolute;
     border-radius: 50px;
     top: 25px;
@@ -251,353 +223,273 @@ body {
 }
 
 /* CONTENT HERE */
-:root {
-    --Font1:  Arial, Helvetica, sans-serif;
-
-    --D_Blue: #023E8A;
-    --White: #FFFFFF;
-}
-
-/* 
-=============================================
-index.html
-=============================================
-*/
-
-h1,
-h2,
-p,
-ol,
-label {
-    -webkit-user-drag: none;
-        user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-/*
-Enrollment Button
-*/
-
 .enrollment {
     text-transform: uppercase;
-
     font-size: 25px;
-
-    margin-top: 40px;
-
-    color: var(--D_Blue);
-
+    margin-top: -30px;
+    color: #023E8A;
     text-align: center;
 }
 
 form > button {
     text-transform: uppercase;
-
     font-size: 25px;
-
-    background-color: var(--White);
-    color: var(--D_Blue);
-
+    background-color: #FFFFFF;
+    color: #023E8A;
     padding: 15px 30px;
-
     border-style: solid;
+    border-color: #023E8A;
     border-radius: 100px;
-    border-color: var(--D_Blue);
     border-width: 3px;
-
     position: relative;
     bottom: 0px;
-
     transition: 0.3s;
 }
 
-form > button:hover {
-    background-color: var(--D_Blue);
-    
-    color: var(--White);
 
+form > button:hover {
+    background-color: #023E8A;
+    
+    color: #FFFFFF;
     position: relative;
     bottom: 3px;
-
-    box-shadow: 0px 2px 5px var(--D_Blue);
+    box-shadow: 0px 2px 5px #023E8A;
 }
 
-/*
-Windows
-*/
-
-.pg-1 {
-    font-size: 20px;
-
-    background-color: var(--D_Blue);
-    color: var(--White);
-
-    padding: 10px 30px;
-    
-    width: 250px;
-    
-    margin-top: 10px;
-
-    border-radius: 100px;
-}
-
-
-ol {
-    color: var(--D_Blue);
-
-    padding: 35px 70px 70px;
-
-    margin-top: -20px;
-
-    width: 400px;
-
-    border-style: dashed;
-    border-color: var(--D_Blue);
-    border-radius: 30px;
-}
-
-/*
-Enrollment Section
-*/
-
-.req {
-    margin: 40px 200px;
-
-    border-style: solid;
-    border-color: var(--D_Blue);
-    border-radius: 50px;
-    
-    padding: 20px 40px;
-}
-
+/* Enrollment Section */
 .req > h2 {
     text-transform: uppercase;
     
     font-size: 30px;
-
-    color: var(--White);
-
-    background-color: var(--D_Blue);
-
+    color: #FFFFFF;
+    background-color: #023E8A;
     border-radius: 30px 30px 0px 0px;
-
-    padding: 35px 80px;
-
-    text-align: center;
-    margin-top: -23px;
-    margin-left: -43px;
+    padding: 20px 20px;
+    margin: -22px -21px;
     
-    width: 949px;
-    height: auto;
+    text-align: center;
+    width: 1030px;
+    height: 70px;
 }
+
+.req {
+    width: 1035px;
+    height: auto;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    border-style: solid;
+    border-color: #023E8A;
+    border-radius: 35px;
+}
+
+.req1 {
+    margin: 90px;
+    display: flex;
+    justify-content: center;
+}
+.req > p {
+    font-size: 20px;
+    background-color: #023E8A;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    
+    width: 250px;
+    
+    margin-top: 40px;
+    border-radius: 100px;
+}
+
+.req > ol {
+    color: #023E8A;
+    padding: 40px 70px;
+    margin-top: -35px;
+    width: 450px;
+    border-style: dashed;
+    border-color: #023E8A;
+    border-radius: 30px;
+}
+
 
 .online {
     float: left;
-
-    margin-top: -598px;
-
+    margin-top: -675px;
     position: relative;
-    left: 455px;
+    left: 475px;
 }
-
+.online > p {
+    font-size: 20px;
+    background-color: #023E8A;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    
+    width: 250px;
+    
+    margin-top: 50px;
+    border-radius: 100px;
+}
 .online > ol {
-    height: 458px;
+    color: #023E8A;
+    height: 606px;
+    width: 480px;
+    margin-top: -25px;
+    padding: 40px 70px 0px;
+    border-style: dashed;
+    border-color: #023E8A;
+    border-radius: 30px;
 }
-
-/*
-Payment
-*/
-
+/* Payment Options */
 .pay {
-    background-color: var(--D_Blue);
-    background: linear-gradient(180deg, rgba(47, 105, 179, 0) 0%, #023E8A 100%);
-
-    color: var(--D_Blue);
-
-    padding: 100px 50px;
-    padding-bottom: 100px;
-
+    color: #023E8A;
+    margin: 50px 0px;
 }
-
+.paybtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pay > hr {
+    display: block;
+    border-color: #023E8A;
+    border-width: 2px;
+    border-style:solid;
+    margin: 20px -50px;
+}
 .pay > h1 {
     text-transform: uppercase;
-
+    text-align: center;
     font-size: 50px;
-
     padding-left: 80px;
 }
-
-.pay > button {
+.paybtn > button {
     background-repeat: no-repeat;
     background-size: contain;
-
-    background-color: var(--White);
-
+    background-color: #FFFFFF;
     padding: 50px 100px;
-
     margin: 0px 2px;
-
     border-style: solid;
     border-radius: 30px;
-    border-color: var(--White);
+    border-color: #FFFFFF;
     border-width: 50px;
-
     transition: 0.3s;
 }
-
-.pay > button:hover {
+.paybtn > button:hover {
     position: relative;
     bottom: 3px;
-
-    box-shadow: 0px 2px 5px var(--D_Blue);
+    box-shadow: 0px 2px 5px #023E8A;
 }
-
-.pay > #opt1 {
-    background-image: url(../Images/myAdmission/paypal-logo.png);
+.paybtn > #opt1 {
+    background-image: url("../Images/myAdmission/paypal-logo.png");
 }
-
-.pay > #opt2 {
-    background-image: url(../Images/myAdmission/visa-logo.png);
+.paybtn > #opt2 {
+    background-image: url("../Images/myAdmission/visa-logo.png");
 }
-
-.pay > #opt3 {
-    background-image: url(../Images/myAdmission/MasterCard_Logo.png);
+.paybtn > #opt3 {
+    background-image: url("../Images/myAdmission/MasterCard_Logo.png");
 }
-
-.pay > #opt4 {
-    background-image: url(../Images/myAdmission/cebuana-logo.png);
+.paybtn > #opt4 {
+    background-image: url("../Images/myAdmission/cebuana-logo.png");
 }
-
-/* 
-=============================================
-enroll.html
-=============================================
-*/
-
+/* Motto */
+.motto {
+    font-size: larger;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: aqua;
+    background-image: url("../Images/myAdmission/collegehatthrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    padding: 150px 0px;
+}
 #enrollment {
-    background-color: #FFFFFF;
-
+    background:#FFFFFF;
+    background-image: url("../Images/myAdmission/online-class.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.enrollment {
+    margin-top: 50px;
+}
 label {
     font-size: 15px;
+    color: #023E8A;
 }
-
-.enroll > .bio > input {
+.enroll > .inputs > h1 {
+    background-color:  #023E8A;
+    color: #FFFFFF;
+    margin: -23px -23px 20px -23px;
+    border-radius: 30px 30px 0px 0px;
+    padding: 10px 40px;
+}
+.enroll > .inputs > input {
     font-family: var(--Font1);
-
-    border: 1px solid var(--D_Blue);
-
-    width: 370px;
-
+    border: 1px solid #023E8A;
+    width: 400px;
     padding: 10px;
-
     display: block;
-
     align-items: center;
 }
-
 .enroll {
-    background-color:var(--White);
-
+    background-color:#FFFFFF;
     border-style: solid;
-    border-color: var(--D_Blue);
+    border-color: #023E8A;
     border-radius: 30px;
-
     padding: 20px;
-
     margin: 50px 450px;
-
     box-shadow: 0px 0px 5px black;
 }
-
-.enroll > .bio > h1 {
-    background-color:  var(--D_Blue);
-    color: var(--White);
-
-    margin: -23px -23px 20px -23px;
-
-    border-radius: 30px 30px 0px 0px;
-
-    padding: 20px 40px;
-
-}
-
 .register,
 .login {
     border-radius: 0px;
-
-    background-color: var(--D_Blue);
-
-    color: var(--White);
-
+    background-color: #023E8A;
+    color: #FFFFFF;
+    margin: 10px 0px;
+    width: 400px;
 }
-
 .register {
-    padding: 5px 128px;
+    padding: 5px 124px;
 }
-
 .login {
     padding: 5px 150px;
 }
-
 .register:hover,
 .login:hover {
     position: relative;
     bottom: 0px;
-
-    box-shadow: 0px 0px 5px var(--D_Blue);
+    box-shadow: 0px 0px 5px #023E8A;
 }
-
-/* 
-=============================================
-payment.html
-=============================================
-*/
-
-
 /* CONTENT ENDS HERE */
 
-
-
 /* CONTACTS / BOTTOMLINE */
-
 .outline2 {
     border-width: 0;
     height: 20px;
     background-color: #023E8A;
 }
-
 .contacts {
     margin-top: -8px;
     height: 190px;
     background-color: hsl(0, 0%, 100%);
 }
-
 .contact {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-
     display: flex;
     text-align: center;
     justify-content: center;
     color: black;
 }
-
 .contact2 {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-
     margin-left: 40px;
     margin-top: -70px;
     display: flex;
@@ -605,14 +497,12 @@ payment.html
     justify-content: left;
     color: black;
 }
-
 .contact3 {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-
     margin-right: 40px;
     margin-top: -60px;
     display: flex;
@@ -620,14 +510,12 @@ payment.html
     justify-content: right;
     color: black;
 }
-
 .logo2 {
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-
     display: block;
     margin-top: 15px;
     padding-top: 20px;

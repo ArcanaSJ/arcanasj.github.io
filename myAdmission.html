@@ -28,23 +28,20 @@
             <img src="Images/myHome/User.jpg" alt="" class="userlog">
         </section>
     </div>
-
+    
     <!-- CONTENT HERE -->
     <div class="enrollment">
-        <div class="hg-1">
         <h1>enrollment</h1>
-    </div>
         <form>
             <button type="button" id="enroll" onclick="window.location.href = 'myEnrollment.html'" >enroll here</button>
         </form>
     </div>
-
-    <div class="req">
+<div class="req1">
+    <form class="req">
         <h2>enrollment requirements</h2>
-        <div class="pg-1">
         <p>College New Students:</p>
-        </div>
         <ol>
+            <br>
             <li>Report Card</li>
             <br>
             <li>Certificate of Good Moral</li>
@@ -52,10 +49,9 @@
             <li>PSA Certificate of Life Birth</li>
         </ol>
         <br>
-        <div class="pg-1">
         <p>College Transferees:</p>
-    </div>
         <ol>
+            <br>
             <li>Certificate of Transfer Credentials or Honorable...</li>
             <br>
             <li>Transcript of Record for Evaluation</li>
@@ -63,62 +59,68 @@
             <li>Certificate of Good Moral</li>
         </ol>
         <br>
-        <div class="pg-1">
         <p>College Cross-enrollees:</p>
-    </div>
         <ol>
+            <br>
             <li>Permit to cross-enroll</li>
             <br>
             <li>Certificate of Good Moral</li>
         </ol>
         <div class="online">
-            <div class="pg-1">
             <p>Online enrollment:</p>
-        </div>
             <ol>
+                <br>
+                <br>
                 <li>Admission application:</li>
+                <br>
+                <br>
                 <br>
                 <li>Submission of Documents (link provided in step 1)</li>
                 <br>
+                <br>
+                <br>
+                <br>
                 <li>Application Confirmation - Enrollment confirmation will be sent through the applicant portal by the admission team within 3 working days.**Note: Application submitted after office hours will be processed on the next working day.</li>
+                <br>
+                <br>
+                <br>
                 <br>
                 <li>Payment of Learning Management System Activation Fee (Onsite or Online) (Payment instruction is provided in step 3)</li>
             </ol>
         </div>
+    </form>
+</div>
+<div class="pay">
+    <h1>Payment Options</h1>
+    <hr>
+</div>
+    <div class="paybtn">
+    <button type="button" id="opt1" onclick="pay(this.id)"></button>
+    <button type="button" id="opt2" onclick="pay(this.id)"></button>
+    <button type="button" id="opt3" onclick="pay(this.id)"></button>
+    <button type="button" id="opt4" onclick="pay(this.id)"></button>
     </div>
-
-    <div class="pay">
-        <h1>Payment Options</h1>
-        <button type="button" id="opt1" onclick="pay(this.id)"></button>
-        <button type="button" id="opt2" onclick="pay(this.id)"></button>
-        <button type="button" id="opt3" onclick="pay(this.id)"></button>
-        <button type="button" id="opt4" onclick="pay(this.id)"></button>
+    
+    <div class="motto">
+        <h1>overcome, strive, adapt!</h1>
+        <p>become part of the ISCP now!</p>
     </div>
-
     <!-- CONTENT ENDS HERE -->
-
-        <!-- BOTTOM LINE -->
-
-        <hr class="outline2">
-        <div class="contacts">
-            <img src="Images/myHome/Logo.png" alt="" class="logo2">
-            <p class="contact">International State College of <br> Philippines</p>
-            <div class="information">
-                <p class="contact2">Basak Pardo., Ave Cebu Philippines<br>
-                    Telephone: 6-8000<br>
-                    Email: info@iscp.edu
-                    </p>
-
-                <p class="contact3">&copy; 2022 International State<br> College of the Philippines.<br> All Rights Reserved.</p>
+            <!-- BOTTOM LINE -->
+            <hr class="outline2">
+            <div class="contacts">
+                <img src="Images/myHome/Logo.png" alt="" class="logo2">
+                <p class="contact">International State College of <br> Philippines</p>
+                <div class="information">
+                    <p class="contact2">Basak Pardo., Ave Cebu Philippines<br>
+                        Telephone: 6-8000<br>
+                        Email: info@iscp.edu
+                        </p>
+                    <p class="contact3">&copy; 2022 International State<br> College of the Philippines.<br> All Rights Reserved.</p>
+                </div>
             </div>
         </div>
-    </div>
-<script>
-    function pay(id)
-    {
-        localStorage.option = id;
-        window.location.href = 'myPayment.html';
-    }
-</script>
-</body>
-</html>
+        <script src="JavaScript/jsLogin2.js"></script>
+    </body>
+    </html>
+    
