@@ -1,0 +1,370 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Canela;
+    src: url(../Fonts/CanelaDeck-Regular-Trial.otf);
+}
+
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat; 
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.outline {
+    border-width: 0;
+    height: 20px;
+    background-color: #023E8A;
+}
+
+.navigation {
+    margin-top: -8px;
+    height: 130px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.logo{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100px;
+    height: auto;
+}
+
+.navigation p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    color: black;
+    font-size: large;
+    font-weight: 300;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+}
+
+.nav1 {
+    position: absolute;
+    margin: 35px auto 0;
+    left: 510px;
+    width: 530px;
+    height: 50px;
+    background: #023E8A;
+    border-radius: 50px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+/* ANIMATION */
+
+body {
+    animation: transitionIn 0.75s;
+}
+
+.quote {
+    animation: transitionIn2 2.75s;
+    transition-delay: 200ms;
+}
+
+/* .nav2 a {
+    animation: transitionIn1 2.75s;
+}
+
+.nav2 a {
+    animation: transitionIn2 3.75s;
+    transition-delay: 200ms;
+} */
+
+.info h2 {
+    animation: transitionIn4 5.75s;
+}
+
+.info p {
+    animation: transitionIn3 6.75s;
+    transition-delay: 400ms;
+}
+
+
+@keyframes transitionIn4 {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionIn3 {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionIn2 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        transition-delay: 200ms;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.nav1 a {
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s linear;
+}
+
+.nav1 a:hover {
+    color:#023E8A;
+}
+
+.nav1 .animation{
+	position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: -20px;
+	height: 80%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #ffffff;
+	border-radius: 55px;
+	transition: all .5s ease 0s;
+}
+.nav1 a:nth-child(1){
+	width: 90px;
+    transition: all .5s linear;
+}
+.nav1 a:nth-child(1):hover~.animation{
+	width: 80px;
+	left: 0;
+}
+.nav1 a:nth-child(2){
+	width: 80px;
+}
+.nav1 a:nth-child(2):hover~.animation{
+	width: 90px;
+	left: 80px;
+}
+.nav1 a:nth-child(3){
+	width: 130px;
+}
+.nav1 .start-home, a:nth-child(3):hover~.animation{
+	width: 135px;
+	left: 160px;
+}
+.nav1 a:nth-child(4){
+	width: 120px;
+}
+.nav1 a:nth-child(4):hover~.animation{
+	width: 120px;
+	left: 295px;
+}
+.nav1 a:nth-child(5){
+	width: 100px;
+}
+.nav1 a:nth-child(5):hover~.animation{
+	width: 110px;
+	left: 410px;
+}
+
+/* USERLOG */
+
+.userlog {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    position: absolute;
+    border-radius: 50px;
+    top: 25px;
+    right: 0;
+    margin-top: 17px;
+    margin-right: 50px;
+    width: 60px;
+    height: auto;
+}
+
+.logout {
+    filter: invert(9%) sepia(30%) saturate(5280%) hue-rotate(308deg) brightness(62%) contrast(106%);
+    position: absolute;
+    top: 25px;
+    right: 0;
+    margin-top: 35px;
+    margin-right: 120px;
+    width: 30px;
+    height: auto;
+}
+
+/* CONTENT HERE */
+.father {
+    margin: 50px;
+    font-size: larger;
+}
+
+.father p {
+    margin-left: 35px;
+}
+
+.father h2, h4{
+    text-align: center;
+}
+.father1 {
+    background-image: url(../Images/myCollege/course-bg4.png);
+    height: 500px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.father2 {
+    background-image: url(../Images/myCollege/course-bg2.jpg);
+    height: 460px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.father3 {
+    background-image: url(../Images/myCollege/course-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    height: 500px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.father4 {
+    background-image: url(../Images/myCollege/course-bg3.png);
+    height: 500px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+/* CONTENT ENDS HERE */
+
+.outline2 {
+    border-width: 0;
+    height: 20px;
+    background-color: #023E8A;
+}
+
+.contacts {
+    margin-top: -8px;
+    height: 170px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.contact {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.contact2 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    margin-left: 40px;
+    margin-top: -90px;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    color: black;
+}
+
+.contact3 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    margin-right: 40px;
+    margin-top: -50px;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    color: black;
+}
+
+.logo2 {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    display: block;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+}
